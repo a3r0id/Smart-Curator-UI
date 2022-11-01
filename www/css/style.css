@@ -1,0 +1,36 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    color: white;
+}
+
+.search-button:hover {
+    background-color: transparent !important;
+    color: #fff !important;
+}
+
+.scroller{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(255, 0, 0, 0.911) !important;
+    color: whitesmoke;
+    font-size: xx-large;
+    font-weight: 800;
+    height: 10vh;
+}
+
+.scroller-content {
+    display: block; /* Important to give the content a width */
+    white-space: nowrap;
+    background-color: rgba(255, 0, 0, 0.911) !important;
+    width: 100%;
+    transform: translateX(100%); /* Animation start out of the screen */
+
+    height: 8vh;
+}
+  
+/* Create the animation */
+@keyframes move {
+    to { transform: translateX(-100%); }
+}

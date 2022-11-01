@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Smart Curator UI</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Jquery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!--w3-css-->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!--Font Awesome 6 - Kit-->
+        <script src="https://kit.fontawesome.com/b3f984f46e.js" crossorigin="anonymous"></script>
+        <!--Style.css-->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!--Main View-->
+        <section class="viewport">
+            <!--Nav bar-->
+            <div class="nav w3-bar w3-black" style="height: 8vh;">
+                <!--Search bar-->
+                <div class="w3-bar-item w3-right">        
+                    <input class="w3-input search" type="text" name="search" placeholder="Search.." style="width: 20vw;">
+                </div>
+            </div>
+            <!--Scroller-->
+            <div class="scroller w3-bar w3-container w3-padding"><div class="scroller-content"></div></div>
+            <!--Feed Section-->
+            <div class="feed"></div>
+        </section>
+        <script src="js/data.js"></script>
+        <script src="js/search.js"></script>
+    </body>
+</html>
